@@ -3,7 +3,10 @@ PCA is a famous supervised learning method in ML field, it's simple but useful i
 
 # PCA in Linear Algebra
 In real world, the data usually looks like
-|id|feature_1|feature_2|$\cdots$|feature_n|
+|id|height|weight|$\cdots$|blood_pressure|
 |-|-|-|-|-|
-
+1 | 174 | 63 | $\cdots$ | 69 |
+2 | 170 | 72 | $\cdots$ | 90 |
+$\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | 
+n | 183 | 76 | $\cdots$ | 66
 
