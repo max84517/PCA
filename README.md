@@ -5,10 +5,11 @@ PCA is a famous supervised learning method in ML field, it can use to classifica
 In real world, the data usually looks like
 |id|height|weight|$\cdots$|blood_pressure|
 |-|-|-|-|-|
-1 | 174 | 63 | $\cdots$ | 69 |
-2 | 170 | 72 | $\cdots$ | 90 |
+1 | $x_{1,1}$ | $x_{1,2}$ | $\cdots$ | $x_{1,n}$ |
+2 | $x_{2,1}$ | $x_{2,2}$ | $\cdots$ | $x_{2,n}$ |
 $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | 
-n | 183 | 76 | $\cdots$ | 66
+n | $x_{m,1}$ | 76 | $\cdots$ | $x_{m,n}$
 
 The data usually have a problems -- **There are correlations between features, so some information may be overlapped**, for example, the higher blood pressure level often comes with the higher cholesterol level!
  
+So, we come up with an idea, we want to find a weighted index that are 
