@@ -22,6 +22,12 @@ y_{m,1} & y_{m,2} & \cdots & y_{m,n} \\
 \end{bmatrix}
 $$
 
+Where 
+
+$$
+y_{i,j} = \frac{x_{i,j} - \overline{x_{j}}}{\sigma_{j}}
+$$
+
 The data usually have a problems -- **There are correlations between features, so some information may be overlapped**, for example, the higher blood pressure level often comes with the higher cholesterol level! keep this in mind, we would return to this later.
 
 
