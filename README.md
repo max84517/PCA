@@ -11,6 +11,7 @@ $\vdots$ | $\vdots$ | $\vdots$ | $\ddots$ | $\vdots$ |
 n | $x_{m,1}$ | $x_{m,2}$ | $\cdots$ | $x_{m,n}$
 
 Normally, we will normalized the data in preprocessing process to make comparison easy and prevant a super large number suddenly appear in our model. So we can obtain a matrix
+
 $$
 B = 
 \begin{bmatrix}
