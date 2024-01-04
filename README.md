@@ -84,3 +84,44 @@ So the unit eigenvectors that corresponding to $\lambda_1$ is called the first P
 $$
 a = e_1
 $$
+
+Since B^TB is a symmetric matrix, the different eigenvalues corrsponding eigenspace must be orthogonal 
+
+$$
+Cov(e_2^Ty, e_1^Ty) = e_2^TB^TBe_1 = e_2^T\lambda_1e_1 = \lambda_1e_2^Te_1 = 0
+$$
+
+So every principal components must be uncorrelated! In other words, each principal components must reflect different information!
+
+# Applying PCA on Iris Dataset
+To better understanding the PCA, we demonstrate a simple application by using a famous dataset - iris dataset
+
+## Data preprocessing
+
+We fist import the data and attach the label to each observations (Note that PCA still a unsupervised learning, this step is only to make the visualized result more clear) and normalized the data 
+
+```python
+def process_data():
+    iris = load_iris()
+    df = pd.DataFrame(np.concatenate((iris.data, np.array([iris.target]).T), axis=1),
+                      columns=iris.feature_names + ['target'])
+
+    X = df.iloc[:, :-1].values
+    y = df.iloc[:, -1].values
+
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+
+    return X_scaled, y
+```
+Then, data should looks like
+
+| |sepal length (cm)| sepal width (cm) | petal length (cm) | petal width (cm) | target |
+|-|-|-|-|-|-|
+|0|5.1	|3.5	|1.4	|0.2	|0.0|
+|1|4.9	|3.0	|1.4	|0.2	|0.0|
+|2|4.7	|3.2	|1.3	|0.2	|0.0|
+| $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |
+|149|5.9	|3.0	|5.1	|1.8	|2.0|
+
+
