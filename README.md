@@ -98,7 +98,7 @@ To better understanding the PCA, we demonstrate a simple application by using a 
 
 ## Data preprocessing
 
-We fist import the data and attach the label to each observations (Note that PCA still a unsupervised learning, this step is only to make the visualized result more clear) and normalized the data 
+`process_data()` will first import the data and attach the label to each observations (Note that PCA still a unsupervised learning, this step is only to make the visualized result more clear) and normalized the data 
 
 ```python
 def process_data():
@@ -137,7 +137,7 @@ def perform_pca(X_scaled):
 ```
 ## Plotting 
 
-At the end, we use `plot_3d_pca()` plot the result in 3-d graph
+At the end, we use `plot_3d_pca()` to plot the result in 3-d graph
 
 ```python
 def plot_3d_pca(df_pca):
