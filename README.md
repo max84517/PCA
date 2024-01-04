@@ -165,6 +165,6 @@ def plot_3d_pca(df_pca):
     plt.show()
 ```
 
-Attach the names and color of each type of iris, we get a beautiful graph that demonstrate how PCA distinguish different type of iris simply by delivering differnt weights of features!
+Attach the names and color of each type of iris, we get a beautiful graph that demonstrate how PCA distinguish different type of iris simply by delivering differnt weights to each features!
 
 ![alt text](https://github.com/max84517/PCA/blob/main/graph/iris_pca.png)
