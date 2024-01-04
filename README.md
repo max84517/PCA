@@ -58,19 +58,19 @@ $$
 $$
 
 $$
-s.t. a^Ta = 1
+s.t. \quad a^Ta = 1
 $$
 
 According to Rayleigh quotient, we can obtain the optimal relative weight is the units eighevectors of $\rho$
 
 $$
-a = e_{i} \quad i \in [1, n]
+a = e_{i}, \quad i \in [1, n]
 $$
 
 The variance will be 
 
 $$
-Var(z) = \lambda_{i} \forall i \in [1, n]
+Var(z) = \lambda_{i} ,\quad\forall i \in [1, n]
 $$
 
 So, the greater the eigenvalues, the greater the varience. we can sort the eigenvalue in descending order
