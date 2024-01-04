@@ -45,7 +45,7 @@ $$
 \max Var(z) = \max\frac{\sum(z_{k} - \overline{z})^2}{m-1} = \max\frac{\sum(a^Ty_{k} - 0)^2}{m -1} = \max \frac{a^TB^TBa}{m -1} = a^T\rho a
 $$
 
-Since we wnat the relative weights' length add to 1 (we can always do it by devided by its length)
+Since we want the relative weights' length add to 1 (we can always do it by devided by its length)
 
 $$
 \sum a_i^2 = a^Ta = 1
