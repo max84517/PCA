@@ -98,7 +98,7 @@ To better understanding the PCA, we demonstrate a simple application by using a 
 
 ## Data preprocessing
 
-`process_data()` will first import the data and attach the label to each observations (Note that PCA still a unsupervised learning, this step is only to make the visualized result more clear) and normalized the data 
+`process_data()` will first import the data and attach the label to each observations (Note that PCA is still a unsupervised learning, this step is only to make the visualized result more clear) and normalized the data 
 
 ```python
 def process_data():
