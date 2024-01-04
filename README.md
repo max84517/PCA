@@ -85,7 +85,7 @@ $$
 a = e_1
 $$
 
-Since B^TB is a symmetric matrix, the different eigenvalues corrsponding eigenspace must be orthogonal 
+Since $B^TB$ is a symmetric matrix, the different eigenvalues corrsponding eigenspace must be orthogonal 
 
 $$
 Cov(e_2^Ty, e_1^Ty) = e_2^TB^TBe_1 = e_2^T\lambda_1e_1 = \lambda_1e_2^Te_1 = 0
