@@ -124,4 +124,47 @@ Then, data should looks like
 | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |
 |149|5.9	|3.0	|5.1	|1.8	|2.0|
 
+## PCA 
 
+Then, we simply perform PCA and since there are three different types of iris, we try to use three principal components to distinguish them. After that the `perform_pca()` return the results
+
+```python
+def perform_pca(X_scaled):
+    pca = PCA(n_components=3)
+    X_pca = pca.fit_transform(X_scaled)
+    
+    return X_pca
+```
+## Plotting 
+
+At the end, we use `plot_3d_pca()` plot the result in 3-d graph
+
+```python
+def plot_3d_pca(df_pca):
+    fig = plt.figure(figsize=(10, 8))
+    ax = fig.add_subplot(111, projection='3d')
+
+    targets = df_pca['target'].unique()
+    colors = ['r', 'g', 'b']
+
+    flower_names = {0: 'Setosa', 1: 'Versicolor', 2: 'Virginica'}
+
+    for target, color in zip(targets, colors):
+        indices_to_keep = df_pca['target'] == target
+        ax.scatter(df_pca.loc[indices_to_keep, 'PC1'],
+                   df_pca.loc[indices_to_keep, 'PC2'],
+                   df_pca.loc[indices_to_keep, 'PC3'],
+                   c=color,
+                   label=flower_names[target])
+
+    ax.set_xlabel('Principal Component 1 (PC1)')
+    ax.set_ylabel('Principal Component 2 (PC2)')
+    ax.set_zlabel('Principal Component 3 (PC3)')
+    ax.set_title('PCA of Iris Dataset in 3D')
+    ax.legend()
+    plt.show()
+```
+
+Attach the names and color of each type of iris, we get a beautiful graph that demonstrate how PCA distinguish different type of iris simply by delivering differnt weights of features!
+
+![alt text](https://github.com/max84517/PCA/blob/main/graph/iris_pca.png)
