@@ -1,5 +1,5 @@
 # Introduction to Principal Component Analysis(PCA)
-PCA is a famous supervised learning method in ML field, it can use to classification and it's simple but useful in many ways. I will take a brief introduction to PCA from linear algebrea aspect then demonstrate PCA on iris dataset.
+PCA is a famous supervised learning method in ML field, it can use to cluster and it's simple but useful in many ways. I will take a brief introduction to PCA from linear algebrea aspect then demonstrate PCA on iris dataset.
 
 # PCA in Linear Algebra
 In real world, the data usually looks like
